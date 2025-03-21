@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  header {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    margin: 0 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+    transition: all 0.3s ease; 
+  }
+  
+  nav a:hover {
+    background-color: #007BFF; 
+    color: white; 
+    border-radius: 5px; 
+  }
+  
+  nav a:hover {
+    color: #000000;
+  }
+  
+  .about-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem; /* เพิ่มช่องว่างเยอะ ๆ ด้านล่าง */
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .info-text h3 {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .about-text p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .personal-info {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  
+    .profile-pic {
+      margin: 0 auto;
+    }
+  }
+    
+  /* เพิ่มระยะห่างระหว่าง <ul> */
+  section#projects ul {
+    margin-bottom: 40px; /* ระยะห่างด้านล่างของ <ul> แต่ละอัน */
+}
+
+/* ปรับแต่ง <li> ที่มีรูปภาพและข้อความ */
+section#projects ul li {
+    margin-bottom: 30px; /* ระยะห่างระหว่างแต่ละ <li> (รูปภาพ + ข้อความ) */
+    list-style: none; /* ลบจุดหน้าข้อความใน <ul> ที่มีรูปภาพ */
+}
+
+/* ปรับแต่งรูปภาพ */
+section#projects ul li img {
+    display: block; /* ทำให้รูปภาพเป็น block เพื่อให้ margin ทำงานได้เต็มที่ */
+    margin-bottom: 10px; /* ระยะห่างระหว่างรูปภาพและข้อความด้านล่าง */
+}
+
+/* ปรับแต่งข้อความ */
+section#projects ul li p {
+    margin: 0; /* ลบ margin เริ่มต้นของ <p> เพื่อให้ควบคุมระยะห่างได้ง่ายขึ้น */
+}
+  
+  
+  .skills-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-category p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  .skills-category strong {
+    color: #555;
+  }
+  
+  .language-skills {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  .language-skills th, .language-skills td {
+    padding: 0.75rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .language-skills th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .language-skills td {
+    background-color: #fff;
+  }
+  
+  .language-skills tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .skills-section {
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .language-skills th, .language-skills td {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  .about-text p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #000000;
+  }
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  #scrollTopBtn:hover {
+    background-color: #0056b3;
+  }
